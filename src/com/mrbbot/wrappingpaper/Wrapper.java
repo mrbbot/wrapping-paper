@@ -3,7 +3,7 @@ package com.mrbbot.wrappingpaper;
 import java.io.*;
 import java.util.function.Consumer;
 
-public class WrappingPaper {
+public class Wrapper {
     private ProcessBuilder builder;
     private Process process;
 
@@ -14,7 +14,7 @@ public class WrappingPaper {
     private Thread errorConsumeThread;
     private PrintWriter stdInWriter;
 
-    public WrappingPaper(String... command) {
+    public Wrapper(String... command) {
         builder = new ProcessBuilder(command);
     }
 
