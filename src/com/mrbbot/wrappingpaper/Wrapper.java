@@ -22,7 +22,7 @@ public class Wrapper {
         this.outputConsumer = consumer;
     }
 
-    public void input(String input) {
+    public void input(Object input) {
         stdInWriter.println(input);
         stdInWriter.flush();
     }
