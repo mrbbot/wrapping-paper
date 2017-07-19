@@ -23,6 +23,10 @@ public class Wrapper {
     }
 
     public void input(Object input) {
+        if(stdInWriter == null) {
+            throw new IllegalStateException("The process is not running!");
+        }
+
         stdInWriter.println(input);
         stdInWriter.flush();
     }
